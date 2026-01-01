@@ -1,0 +1,35 @@
+.backColor{
+    background: linear-gradient(45deg,rgba(0, 18, 12, 0.744),rgb(77, 22, 195),rgb(3, 3, 141));
+}
+.heading{
+    background: linear-gradient(45deg,rgb(70, 15, 236),rgba(47, 110, 210, 0.66),rgb(70, 15, 236));
+    font-weight: 800;
+    font-style: italic;
+}
+.card-title{
+    font-size: 14px;
+    font-weight: bold;
+    height: 32px;
+    overflow: auto;
+}
+.card-title::-webkit-scrollbar{
+    display: none;
+}
+.card-text{
+    font-size: 13px;
+    height: 60px;
+}
+.source{
+    font-size: 12px;
+    font-weight: bold;
+}
+.card-img-top{
+    height: 140px;
+}
+.mainConatiner{
+
+ background-color: rgba(245, 245, 245, 0.678);
+}
+.footer{
+ background: linear-gradient(45deg,rgb(70, 15, 236),rgba(47, 110, 210, 0.66),rgb(70, 15, 236));   
+}
