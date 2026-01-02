@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 📰 React News App
+=======
+# React News App
+>>>>>>> 989ce8987504d3c4262bc7055c75c95281c584a3
 
 A simple and responsive news application built with **React**.  
 It uses the **NewsAPI** to fetch live articles and lets users browse by category, search topics, and switch between English/Hindi.
