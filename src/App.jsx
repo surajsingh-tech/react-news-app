@@ -22,7 +22,7 @@ export default function App() {
       <BrowserRouter>
         <Navbar fun={langFun} searchFun={searchFun}/>
           <Routes>
-            <Route path="" element={<Home q={search?search.toUpperCase():"All"} Language={lang} />} />
+            <Route path="/" element={<Home q={search?search.toUpperCase():"All"} Language={lang} />} />
             <Route path="/All" element={<Home q={search?search.toUpperCase():"All Categories"} Language={"en"} />} />
             <Route path="/Education" element={<Home q={search?search.toUpperCase():"Education"} Language={lang} />} />
             <Route path="/Entertainment" element={<Home q={search?search.toUpperCase():"Entertainment"} Language={lang} />} />

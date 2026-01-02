@@ -5,23 +5,22 @@ export default function Home({q,Language}) {
 let [news,setnews]=useState([]);
 let [page,SetPage]=useState(1);
 let [totalRes,setTotalRes]=useState(0);
-
+const Key = import.meta.env.VITE_NEWS_API_KEY;
 const firstPage=1;
 const report=async()=>{
-         
           try{
-              const response= await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${Language}&page=${firstPage}&pageSize=18&apiKey=4444023e11fc48b7aff1c59e9e6942a6`);
+              const response= await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${Language}&page=${firstPage}&pageSize=18&apiKey=${Key}`);
               const data=await response.json();
               setTotalRes(data.totalResults)
               setnews(data.articles)
           }catch(error){  
             console.log("error is ",error);
           }}      
-
+          
           const fetchData=async()=>{
             const nextPage=page+1;
           try{
-              const response= await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${Language}&page=${nextPage}&pageSize=18&apiKey=4444023e11fc48b7aff1c59e9e6942a6`);
+              const response= await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${Language}&page=${nextPage}&pageSize=18&apikey=${Key}`);
               const data=await response.json();
               setTotalRes(data.totalResults)
               setnews(prev=>[...prev,...data.articles])
