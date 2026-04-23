@@ -25,11 +25,7 @@ export default function Navbar({fun,searchFun}) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <Link className="nav-link active text-light" aria-current="page" to="/All">
-                        All Categories
-                      </Link>
-                    </li>
+                    <li className="nav-item"> <Link className="nav-link active text-light" aria-current="page" to="/All"> All Categories</Link></li>
                     <li className="nav-item"><Link className="nav-link text-light" to="/Education" onClick={()=>{searchFun("");}}> Education </Link></li>
                     <li className="nav-item"><Link className="nav-link text-light" to="/Entertainment" onClick={()=>{searchFun("");}}> Entertainment </Link></li>
                     <li className="nav-item"><Link className="nav-link text-light" to="/Sports" onClick={()=>{searchFun("");}}> Sports</Link></li>
